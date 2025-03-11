@@ -1,11 +1,11 @@
 <template>
   <div
-    class="flex items-start text-purple-800 hover:text-purple-900 bg-purple-300 hover:bg-purple-400 p-4 rounded-lg cursor-pointer"
+    class="flex items-center text-purple-950 hover:text-purple-900 bg-purple-100 hover:bg-purple-200 p-4 rounded-lg cursor-pointer"
     @mouseenter="activeItem = index"
     @mouseleave="handleMouseLeave"
   >
     <svg
-      class="w-5 h-5 text-purple-700 mt-0.5 mr-2"
+      class="w-5 h-5 text-purple-800 mt-0.5 mr-2"
       fill="none"
       stroke="currentColor"
       viewBox="0 0 24 24"
@@ -33,10 +33,10 @@
             :alt="item.title"
             class="w-full h-40 object-cover rounded-lg"
           />
-          <h3 class="font-bold text-lg">{{ item.title }}</h3>
+          <h3 class="font-bold text-lg text-gray-900">{{ item.title }}</h3>
           <p class="text-gray-600">{{ item.description }}</p>
           <button
-            class="bg-purple-700 text-white py-2 px-4 rounded-xl hover:bg-purple-800 transition-colors"
+            class="bg-purple-900 text-white py-2 px-4 rounded-xl hover:bg-purple-950 transition-colors"
           >
             Lees meer
           </button>

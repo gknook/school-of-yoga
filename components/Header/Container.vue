@@ -36,15 +36,19 @@
 
     <!-- Third column for additional content -->
     <div
-      class="bg-gradient-to-br from-purple-200 to-purple-100 p-8 rounded-3xl text-purple-900 flex flex-col justify-center relative"
+      class="bg-gradient-to-br from-purple-200 to-purple-100 p-8 rounded-3xl flex flex-col justify-center relative"
     >
-      <h3 class="text-2xl font-semibold mb-4">Emma van Kooten</h3>
-      <p class="mt-2">
+      <h3 class="text-3xl font-semibold mb-4 text-purple-950">
+        Emma van Kooten
+      </h3>
+      <p class="mt-2 text-purple-900">
         School of Yoga wordt begeleidt door mijzelf, Emma van Kooten. Ik ben
         vooral in Nepal en India opgeleid en gebruik veel traditionele yoga
         methodieken.
       </p>
-      <p class="lg:mt-8 mt-4">Stijlen waarin ik lesgeef zijn:</p>
+      <p class="lg:mt-8 mt-4 text-purple-900">
+        Stijlen waarin ik lesgeef zijn:
+      </p>
       <ul class="mt-4 grid grid-cols-2 gap-1">
         <li v-for="(item, index) in items" :key="index">
           <StyleGridItems :item="item" :index="index" />
