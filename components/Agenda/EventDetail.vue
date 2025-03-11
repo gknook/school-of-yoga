@@ -1,23 +1,23 @@
 <template>
   <div
-    class="z-30 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:w:1/4 sm:w-1/2 w-3/4 bg-lime-200 rounded-3xl p-6 shadow-xl overflow-hidden"
+    class="z-30 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:w:1/4 sm:w-1/2 w-3/4 bg-rose-200 rounded-3xl p-6 shadow-xl overflow-hidden"
   >
     <div class="flex justify-between items-start w-full space-x-2">
-      <Tag :tag-label="eventType" :tag-color="'green'" />
+      <Tag :tag-label="eventType" :tag-color="'amber'" />
       <UIIconButton @clicked="closeModal"
         ><IconsClose class="p-1 w-8 h-8"
       /></UIIconButton>
     </div>
     <div class="z-10 mt-16">
-      <h2 class="text-4xl font-semibold text-lime-950 z-10 flex-grow">
+      <h2 class="text-4xl font-semibold text-rose-950 z-10 flex-grow">
         {{ eventName }}
       </h2>
-      <p class="z-20 text-lime-800 mt-4">{{ eventDescription }}</p>
+      <p class="z-20 text-rose-800 mt-4">{{ eventDescription }}</p>
 
-      <!-- <p class="z-20 text-sm text-lime-700 mt-2">{{ eventStatus }}</p> -->
+      <!-- <p class="z-20 text-sm text-rose-700 mt-2">{{ eventStatus }}</p> -->
     </div>
     <div
-      class="flex-col justify-start items-center space-y-2 mt-8 text-lime-950"
+      class="flex-col justify-start items-center space-y-2 mt-8 text-rose-950"
     >
       <div class="flex justify-start items-start space-x-2 z-10">
         <IconsCalendar class="flex-none mt-1" /><span>{{ eventDate }}</span>
@@ -34,7 +34,7 @@
     <div class="z-10 mt-16">
       <a
         :href="eventLink"
-        class="text-lime-500 hover:underline hover:text-lime-600"
+        class="text-rose-800 hover:underline hover:text-rose-900 font-semibold"
         >Open in Google Calendar</a
       >
     </div>

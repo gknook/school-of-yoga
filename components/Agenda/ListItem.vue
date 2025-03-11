@@ -1,14 +1,16 @@
 <template>
   <li
-    class="bg-lime-200 p-6 hover:bg-lime-300 hover:shadow-sm relative overflow-hidden cursor-pointer mt-0"
+    class="bg-rose-200 p-6 hover:bg-rose-300 hover:shadow-sm relative overflow-hidden cursor-pointer mt-0"
   >
     <div class="flex justify-between items-start w-full">
-      <h2 class="text-2xl font-semibold text-lime-950 z-10 truncate">
+      <h2 class="text-2xl font-semibold text-rose-950 z-10 truncate">
         {{ eventName }}
       </h2>
-      <Tag :tag-label="eventType" :tag-color="'lime'" />
+      <Tag :tag-label="eventType" :tag-color="'amber'" />
     </div>
-    <div class="flex justify-start items-center space-x-8 mt-2 text-lime-800">
+    <div
+      class="flex justify-start items-center space-x-8 mt-2 text-rose-950/70"
+    >
       <div class="flex justify-start items-center space-x-2 z-10">
         <IconsCalendar /><span>{{ eventDate }}</span>
       </div>
