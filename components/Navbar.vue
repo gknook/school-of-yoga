@@ -8,6 +8,9 @@
       >
     </li>
     <li class="px-4 py-4 hover:bg-purple-100 rounded-xl">
+      <NuxtLink to="/retreats">Retreats</NuxtLink>
+    </li>
+    <li class="px-4 py-4 hover:bg-purple-100 rounded-xl">
       <NuxtLink to="/cursussen/krachtvanyin">Ontdek de kracht van yin</NuxtLink>
     </li>
   </ul>
