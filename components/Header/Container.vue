@@ -1,6 +1,6 @@
 <template>
   <!-- Hero Section with image background and overlaid text -->
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-screen-2xl mx-auto">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-screen-2xl mx-auto">
     <!-- Main content spanning 2 columns with background image -->
     <div
       class="lg:col-span-2 relative overflow-hidden min-h-[500px] flex items-center rounded-3xl border-4 border-purple-200"

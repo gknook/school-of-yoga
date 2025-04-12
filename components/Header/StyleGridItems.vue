@@ -23,12 +23,12 @@
     <Transition name="fade">
       <div
         v-if="activeItem === index"
-        class="right-0 absolute z-40 ml-4 bg-white rounded-xl shadow-xl p-2 w-72 transform transition-all duration-300 ease-in-out h-96"
+        class="right-0 absolute z-40 ml-4 bg-white rounded-xl shadow-xl p-2 w-72 transform transition-all duration-300 ease-in-out h-80"
         @mouseenter="isPeakHovered = true"
         @mouseleave="isPeakHovered = false"
         :class="{ 'bottom-row': index >= 2, 'top-row': index < 2 }"
       >
-        <div class="flex flex-col space-y-4">
+        <div class="flex flex-col space-y-2">
           <img
             :src="item.image"
             :alt="item.title"
@@ -36,11 +36,6 @@
           />
           <h3 class="px-2 font-bold text-lg text-gray-900">{{ item.title }}</h3>
           <p class="px-2 text-gray-600 line-clamp-4">{{ item.description }}</p>
-          <button
-            class="px-2 text-purple-900 hover:text-purple-950 transition-colors text-right"
-          >
-            Lees meer
-          </button>
         </div>
       </div>
     </Transition>
@@ -83,7 +78,7 @@ const handleMouseLeave = () => {
 }
 
 .top-row {
-  top: -24.5rem;
+  top: -20.5rem;
 }
 
 .bottom-row {
